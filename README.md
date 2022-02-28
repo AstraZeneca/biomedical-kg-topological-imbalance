@@ -1,10 +1,14 @@
+# Biomedical KG Topological Imbalance
+
 [![Maturity level-Prototype](https://img.shields.io/badge/Maturity%20Level-Prototype-red)
 ![Arxiv](https://img.shields.io/badge/ArXiv-2112.06567-orange.svg)](https://arxiv.org/abs/2112.06567)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pykeen)](https://img.shields.io/pypi/pyversions/pykeen)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Biomedical KG Topological Imbalance
+<p align="center">
+  <img width="400" src="https://github.com/AstraZeneca/biomedical-kg-topological-imbalance/raw/master/result.png">
+</p>
 
 This repository accompanies our paper [Implications of Topological Imbalance for Representation Learning on Biomedical Knowledge Graphs](https://arxiv.org/abs/2112.06567) and enables replication of our key results.
 
