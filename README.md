@@ -17,8 +17,8 @@ This repository accompanies our paper [Implications of Topological Imbalance for
 This repository contains three jupyter notebooks which replicate the key results and figures from the manuscript. The three notebooks are:
 
 - [`target_prediction.ipynb`](target_prediction.ipynb): This notebook replicates the primary finding of the work and shows how the degree of genes in Hetionet correlates with their predicted score for association with various diseases.
-- `trivial_relations.ipynb`: This notebook explores how the presence of other relationship types between a given gene-disease pair can influence the score of the associates relationship.
-- `other_tasks.ipynb`: The notebook explores the entity degree to predicted score across three other tasks: Drug Repositioning, Protein-Protein Interaction and Drug-Target Interaction.
+- [`trivial_relations.ipynb`](trivial_relations.ipynb): This notebook explores how the presence of other relationship types between a given gene-disease pair can influence the score of the associates relationship.
+- [`other_tasks.ipynb`](other_tasks.ipynb): The notebook explores the entity degree to predicted score across three other tasks: Drug Repositioning, Protein-Protein Interaction and Drug-Target Interaction.
 
 ## Installation Dependencies
 
