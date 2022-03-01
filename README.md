@@ -14,7 +14,7 @@ This repository accompanies our paper [Implications of Topological Imbalance for
 
 ## Notebooks
 
-This repository contains three jupyter notebooks which replicate the key results and figures from the manuscript. The three notebooks are:
+This repository contains four jupyter notebooks which replicate the key results and figures from the manuscript. The three notebooks are:
 
 - [`target_prediction.ipynb`](target_prediction.ipynb): This notebook replicates the primary finding of the work and shows how the degree of genes in Hetionet correlates with their predicted score for association with various diseases.
 - [`trivial_relations.ipynb`](trivial_relations.ipynb): This notebook explores how the presence of other relationship types between a given gene-disease pair can influence the score of the associates relationship.
