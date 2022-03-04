@@ -1,6 +1,6 @@
 # Biomedical KG Topological Imbalance
 
-[![Maturity level-Prototype](https://img.shields.io/badge/Maturity%20Level-Prototype-red)
+![Maturity level-1](https://img.shields.io/badge/Maturity%20Level-ML--1-yellow)
 ![Arxiv](https://img.shields.io/badge/ArXiv-2112.06567-orange.svg)](https://arxiv.org/abs/2112.06567)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pykeen)](https://img.shields.io/pypi/pyversions/pykeen)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
