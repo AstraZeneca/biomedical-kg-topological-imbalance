@@ -6,24 +6,24 @@ from pykeen.pipeline import pipeline
 
 
 def train(args: argparse.Namespace) -> None:
-    """Train a pykeen pipeline object using TransE on Hetionet as reported in the paper"""
+    """Train a pykeen pipeline object using TransE on Hetionet."""
 
     result = pipeline(
         dataset="Hetionet",
-        dataset_kwargs=dict(random_state=args.seed),
+        dataset_kwargs={"random_state": args.seed},
         model="TransE",
-        model_kwargs=dict(embedding_dim=304, random_seed=args.seed),
-        training_kwargs=dict(
-            num_epochs=500,
-            checkpoint_name="transe_hetnet_checkpoint.pt",
-            checkpoint_directory=f"{args.save_path}/checkpoints/",
-            checkpoint_frequency=0,
-        ),
+        model_kwargs={"embedding_dim": 304, "random_seed": args.seed},
+        training_kwargs={
+            "num_epochs": 500,
+            "checkpoint_name": "transe_hetnet_checkpoint.pt",
+            "checkpoint_directory": f"{args.save_path}/checkpoints/",
+            "checkpoint_frequency": 0,
+        },
         optimizer="Adagrad",
         loss="NSSA",
-        optimizer_kwargs=dict(lr=0.02),
-        negative_sampler_kwargs=dict(num_negs_per_pos=61),
-        evaluator_kwargs=dict(filtered=True),
+        optimizer_kwargs={"lr": 0.02},
+        negative_sampler_kwargs={"num_negs_per_pos": 61},
+        evaluator_kwargs={"filtered": True},
         random_seed=args.seed,
     )
 

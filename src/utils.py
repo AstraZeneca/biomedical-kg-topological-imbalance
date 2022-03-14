@@ -16,8 +16,12 @@ def create_type(row) -> str:
         return "unknown"
 
 
-def annotate_predicted_df(df: pd.DataFrame, degs: dict, position: str) -> pd.DataFrame:
-    """Take a pykeen predictions dataframe and annotate with extra information"""
+def annotate_predicted_df(
+    df: pd.DataFrame,
+    degs: dict,
+    position: str,
+) -> pd.DataFrame:
+    """Annotate a pykeen predictions dataframe."""
 
     df["entity_type"] = df[position].str.split("::", expand=True)[0]
     df["triple_type"] = df.apply(lambda row: create_type(row), axis=1)
@@ -33,7 +37,7 @@ def get_predictions_tail(
     model: Model,
     degs: dict,
 ) -> pd.DataFrame:
-    """Make a prediction using a a partial triple and return a dataframe of the results"""
+    """Make a prediction using a a partial triple (missing tail)."""
 
     pred_df = model.get_tail_prediction_df(
         q_entity,
@@ -53,7 +57,7 @@ def get_predictions_head(
     model: Model,
     degs: dict,
 ) -> pd.DataFrame:
-    """Make a prediction using a a partial triple and return a dataframe of the results"""
+    """Make a prediction using a a partial triple (missing head)."""
 
     pred_df = model.get_head_prediction_df(
         q_relation,
