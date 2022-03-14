@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
 
 import pandas as pd
-
-from pykeen.models import Model
 from pykeen.datasets.base import Dataset
+from pykeen.models import Model
 
 
 def create_type(row) -> str:
-    if row["in_training"] == True and row["in_testing"] == False:
+    if row["in_training"] is True and row["in_testing"] is False:
         return "train"
-    elif row["in_training"] == False and row["in_testing"] == True:
+    elif row["in_training"] is False and row["in_testing"] is True:
         return "test"
-    elif row["in_training"] == False and row["in_testing"] == False:
+    elif row["in_training"] is False and row["in_testing"] is False:
         return "novel"
+    else:
+        return "unknown"
 
 
 def annotate_predicted_df(df: pd.DataFrame, degs: dict, position: str) -> pd.DataFrame:
-    "Take a pykeen predictions dataframe and annotate with extra information"
+    """Take a pykeen predictions dataframe and annotate with extra information"""
 
     df["entity_type"] = df[position].str.split("::", expand=True)[0]
     df["triple_type"] = df.apply(lambda row: create_type(row), axis=1)
@@ -26,9 +27,13 @@ def annotate_predicted_df(df: pd.DataFrame, degs: dict, position: str) -> pd.Dat
 
 
 def get_predictions_tail(
-    q_entity: str, q_relation: str, data: Dataset, model: Model, degs: dict
+    q_entity: str,
+    q_relation: str,
+    data: Dataset,
+    model: Model,
+    degs: dict,
 ) -> pd.DataFrame:
-    "Make a prediction using a a partial triple and return a dataframe of the results"
+    """Make a prediction using a a partial triple and return a dataframe of the results"""
 
     pred_df = model.get_tail_prediction_df(
         q_entity,
@@ -42,9 +47,13 @@ def get_predictions_tail(
 
 
 def get_predictions_head(
-    q_entity: str, q_relation: str, data: Dataset, model: Model, degs: dict
+    q_entity: str,
+    q_relation: str,
+    data: Dataset,
+    model: Model,
+    degs: dict,
 ) -> pd.DataFrame:
-    "Make a prediction using a a partial triple and return a dataframe of the results"
+    """Make a prediction using a a partial triple and return a dataframe of the results"""
 
     pred_df = model.get_head_prediction_df(
         q_relation,
