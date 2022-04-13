@@ -1,4 +1,4 @@
-Authors and contributors to awesome-drug-discovery-knowledge-graphs:
+Authors and contributors to biomedical-kg-topological-imbalance :
 
 - Stephen Bonner (sbonner0)
 - Ufuk Kirik (ukirik-az)
