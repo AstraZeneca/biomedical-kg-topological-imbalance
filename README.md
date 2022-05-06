@@ -35,7 +35,9 @@ The code relies primarily on the [PyKEEN](https://github.com/pykeen/pykeen) pack
 
 A pretrained version of the [TransE](https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca8133fa24680a88d2f9-Paper.pdf) model is provided in the `artifacts` directory. This version is automatically used in the notebooks.
 
-However, code is provided to retrain the model or swap it out for a different one in the `train.py` file in the `src` directory. Please use this function to retrain the other models evaluated in the study.
+Due to the size of weight files for the other models used in the study, they were unable to be included in main repository. However, the files are available for download as part of the release of the repository [here](https://github.com/AstraZeneca/biomedical-kg-topological-imbalance/releases/tag/0.2.0). Once the files have been downloaded, please place them in the `artifacts` directory if you wish to use them.
+
+Note that the code is provided to retrain any of the models in the `train.py` file in the `src` directory.
 
 ## Citation
 
