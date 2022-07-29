@@ -44,11 +44,13 @@ Note that the code is provided to retrain any of the models in the `train.py` fi
 Please consider citing the paper for this repo if you find it useful:
 
 ```
-@article{bonner2021implications,
-  title={Implications of Topological Imbalance for Representation Learning on Biomedical Knowledge Graphs},
-  author={Bonner, Stephen and Kirik, Ufuk and Engkvist, Ola and Tang, Jian and Barrett, Ian P},
-  journal={arXiv preprint arXiv:2112.06567},
-  year={2021}
+@article{bonner2022implications,
+    author = {Bonner, Stephen and Kirik, Ufuk and Engkvist, Ola and Tang, Jian and Barrett, Ian P},
+    title = {Implications of topological imbalance for representation learning on biomedical knowledge graphs},
+    journal = {Briefings in Bioinformatics},
+    year = {2022},
+    month = {07},
+    doi = {10.1093/bib/bbac279},
 }
 ```
 
