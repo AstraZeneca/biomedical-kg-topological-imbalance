@@ -10,7 +10,7 @@
   <img width="800" src="https://github.com/AstraZeneca/biomedical-kg-topological-imbalance/raw/master/result.png">
 </p>
 
-This repository accompanies our paper [Implications of Topological Imbalance for Representation Learning on Biomedical Knowledge Graphs](https://arxiv.org/abs/2112.06567) and enables replication of the key results.
+This repository accompanies our paper [Implications of Topological Imbalance for Representation Learning on Biomedical Knowledge Graphs](https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac279/6649936) and enables replication of the key results.
 
 ## Notebooks
 
