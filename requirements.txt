@@ -74,7 +74,7 @@ prompt-toolkit==3.0.28
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
-Pygments==2.11.2
+Pygments==2.15.0
 pykeen @ git+https://github.com/pykeen/pykeen.git@c39713588cb21bb8a0ab0f695fd405edf514fe75
 pyparsing==3.0.7
 pyperclip==1.8.2
