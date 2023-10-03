@@ -107,6 +107,6 @@ tqdm==4.62.3
 traitlets==5.1.1
 typing-inspect==0.7.1
 typing_extensions==4.1.1
-urllib3==1.26.8
+urllib3==1.26.17
 wcwidth==0.2.5
 webencodings==0.5.1
