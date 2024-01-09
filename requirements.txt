@@ -26,7 +26,7 @@ defusedxml==0.7.1
 docdata==0.0.3
 entrypoints==0.4
 executing==0.8.2
-fonttools==4.29.1
+fonttools==4.43.0
 greenlet==1.1.2
 idna==3.3
 ipykernel==6.9.1
